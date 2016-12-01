@@ -1,92 +1,251 @@
-<html>
-<head>
-<title>My Portfolio</title>
+ <html>
+ <head>
+<style>
+body
+{
+    background: url("background.jpg");
+}
+.intro
+{
+    color:white;
+    height: 500px;
+    width:60%;
+    height:40%;
 
-<style >
-    body
-    {
-        background-color: white;
-        padding:15px;
-    }
-    .main
-    {
-        padding: 50px;
-        width:100%;
-    }
+    margin:auto;
+    font-size: 25px;
+    font-family: cursive;
+}
+.skill
+{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.photo
+{
+    display:block;width:200px;height:200px;float:right;
 
-    .category{
-        background-color:black;
-        color:white;
-        border:1px solid black;
-        border-radius:20px;
-        padding:10px;
-        width:80%;
-        margin:auto;
-    }
+}
+.project-banner
+{
+font-size: 20px;
+color: white;
+opacity: 0.9;
+height: 40%;
+width:60%;
+margin: auto;
+
+}
+.language
+{
+    padding:20px;
+}
 </style>
-</head>
-
+ </head>
 <body>
-<h1>My Portfolio</h1>
+     <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">&nbspPortfolio</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+ <div >
+    <div >
+       <img src="back.jpg" style="position:absolute;z-index:-5">
+       <br><br><br><br><br><br>
 
+       <div class="intro">
+        <img src="ds.jpg" class="photo">
+       I am Divyanshu Sundriyal . I am currently pursuing
+       my B.Tech (Final Year ) from IIT Delhi . I love to code.
+   </div>
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h3 class="header">My Skills</h3>
+      <div class="col s4 skill">
+        <img id="test6" src="check.png" width="30px" height="30px">
+      Node js
+      </div>
+       <div class="col s4 skill">
+        <img id="test6" src="check.png" width="30px" height="30px">
+      Angular 2
+      </div>
+       <div class="col s4 skill">
+        <img id="test6" src="check.png" width="30px" height="30px">
+      Unity
+      </div>
+       <div class="col s4 skill">
+        <img id="test6" src="check.png" width="30px" height="30px">
+      Javascript
+      </div>
+       <div class="col s4 skill">
+        <img id="test6" src="check.png" width="30px" height="30px">
+      HTML 5
+      </div>
+       <div class="col s4 skill">
+        <img id="test6" src="check.png" width="30px" height="30px">
+      Java
+      </div>
+       <div class="col s4 skill">
+        <img id="test6" src="check.png" width="30px" height="30px">
+      Mongo DB
+      </div>
+      <div class="col s4 skill">
+        <img id="test6" src="check.png" width="30px" height="30px">
+      Android
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax " style="height:200px;overflow:none">
+        <img src="back2.jpg" style="position:absolute;z-index:-5">
+<br><br><br><br><br>
+<div class="project-banner">
+<h3>Course Projects</h3>
+<ul type="circle" style=" list-style: square inside url("check.png");
+">
+<li><b>Industrial Training<b>
+<ul><li>-Implementation of stream cipher</li>
 
-<img class="photo" src="ds.jpg" width="100px" height="100px"> 
-<h2> Divyanshu sundriyal</h2>
+<li>-Image Steganography</li>
+</ul>
+</li>
+<br>
+<li><b>DMP Android App</b><br>
+-Developed android app for Delhi Master Plan
+</li>
 
+</ul>
+</div>
+    </div>
+  </div>
+<div class="container">
+    
+<div style="background-color:white;padding:10px;text-align:center">
+    <h3>Personal Projects</h3>
+</div>
+    <br>
+  <div id="nodejs" class="card language">
+    <h4>Node js Projects</h4>
+    <hr>
+
+    <a href="http://dischat.herokuapp.com/">Dischat</a> - Real time chat application using node.js and socket.io
+
+    <br>
+    <a href="http://matdaan.herokuapp.com/">MatDaan</a> - A Polling application using Node.js and Mongo DB . Facebook Login using
+    passport.js is also implemented
+  </div>
+<br>
+  <div id="android" class="card language">
+      <h4>Android Projects</h4>
+    
+
+     <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">PaintX</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Where App</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Attendance Tracker</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">CES IIT Delhi App</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">
+    Tryst IIT Delhi App</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+        
+  
+    <br>
+
+  </div>
+<br>
+
+  <div id="html5" class="card language">
+    <h4>HTML 5 Projects</h4>
+   
+
+    <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">HTML 5 Painter</div>
+      <div class="collapsible-body"><p>A painting application using HTML 5 canvas
+  and javascript</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Graph</div>
+      <div class="collapsible-body"><p>A graph application using HTML 5 canvas and javascript</p></div>
+    </li>
+    
+   
+  </ul>
+
+  
+  </div>
 
 <br>
-IIT Delhi
-<br>
-B.Tech Civil Engineering 
+    <div id="java" class="card language">
+    <h4>Java Projects</h4>
+   
+
+      <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">
+   Calculator FX </div>
+      <div class="collapsible-body"><p>A simple calculator built using java FX</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">  Web Scrapper/div>
+      <div class="collapsible-body"><p>A web scrapper to parse data from justdial website</p></div>
+    </li>
+    
+   
+  </ul>
+
+  </div>
 
 
-<hr>
-    
-        <br>
-        <h2>My Projects</h2>
+   <div id="web" class="card language">
+    <h4>Web Development</h4>
+    <hr>
+
+    <a href="http://dimensions-iitd.co.in/">Dimensions IITD Website </a>- Developed Website for Dimenstions 2016 (Civil Engg Fest of IIT Delhi ) using HTML ,CSS and javascript
+</div>
+
+</div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         
-        <div class="category">
-            <h3>Node js</h3>
-            <ul>
-                <li>Dischat</li>
-                                <li>Matdaan</li>
-                                <li>Ecommerce Sample</li>
-                                <li>WebGIS App using PostGIS DB</li>
-            </ul>
-        </div>
-         <br><br>
-        <div class="category">
-            <h3>Android</h3>
-            <ul>
-                                <li>Paint X</li>
-                                <li>Where App</li>
-                                <li>Ecommerce App (Frontend Only)</li>
-                                <li>Attendance tracker</li>
-                                    <li>DMP Android App</li>
-                                <li>CES IIT Delhi Android app</li>
-                                <li>Tryst IIT Delhi android app</li>
-                
-            </ul>
-        </div>
-        <br><br>
-    
-        <div class="category">
-         <h3>Java</h3>
-            <ul>
-                            <li>Java FX Calculator</li>
-                                <li>Web Crawling</li>
-            </ul>
-        </div>
+     <script type="text/javascript">
+  $(document).ready(function(){
+      $('.parallax').parallax();
+       $('.collapsible').collapsible();
+       $('.collapsible2').collapsible();
+    });
+
+
         
-        <br><br>
-        <div class="category">
-         <h3>HTML 5</h3>
-            <ul>
-                                <li>Html 5 painter</li>
-                <li>Html 5 graph</li>
-            </ul>
-        </div>
-        <br><br>
-       
-    
-</body>
+     </script>
+
+     
+
+      </body>
+        </html>
