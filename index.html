@@ -5,9 +5,13 @@ body
 {
     background: url("background.jpg");
 }
+.intro_back
+{
+background-color:#e9ebee;
+color:#000;
+}
 .intro
 {
-    color:white;
     height: 500px;
     width:60%;
     height:40%;
@@ -40,12 +44,13 @@ margin: auto;
 {
     padding:20px;
 }
+
 </style>
  </head>
 <body>
      <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">&nbspPortfolio</a>
+      <a href="#" class="brand-logo">&nbspDivyanshu Sundriyal</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
@@ -54,7 +59,7 @@ margin: auto;
     </div>
   </nav>
  <div >
-    <div >
+    <div class="intro_back">
        <img src="back.jpg" style="position:absolute;z-index:-5">
        <br><br><br><br><br><br>
 
@@ -133,13 +138,36 @@ margin: auto;
     <br>
   <div id="nodejs" class="card language">
     <h4>Node js Projects</h4>
-    <hr>
+    
 
-    <a href="http://dischat.herokuapp.com/">Dischat</a> - Real time chat application using node.js and socket.io
+      <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">
+  Dischat</div>
+      <div class="collapsible-body"><p>Real time chat application using node.js and socket.io .
+        <br> Dischat has functionality of both group chat and 
+        single user chat
+ <br>
+         <a href="http://dischat.herokuapp.com/">Run Dischat</a>
+    
+      </p>
+       
 
-    <br>
-    <a href="http://matdaan.herokuapp.com/">MatDaan</a> - A Polling application using Node.js and Mongo DB . Facebook Login using
+    </li>
+    <li>
+      <div class="collapsible-header">  MatDaan</div>
+      <div class="collapsible-body"><p>A Polling application using Node.js and Mongo DB . Facebook Login using
     passport.js is also implemented
+<br>
+ <a href="http://matdaan.herokuapp.com/">Run MatDaan</a>
+</p>
+
+</div>
+    </li>
+    
+   
+  </ul>
+
   </div>
 <br>
   <div id="android" class="card language">
@@ -184,11 +212,18 @@ margin: auto;
     <li>
       <div class="collapsible-header">HTML 5 Painter</div>
       <div class="collapsible-body"><p>A painting application using HTML 5 canvas
-  and javascript</p></div>
+  and javascript</p>
+<img src="painter.png">
+</div>
     </li>
     <li>
       <div class="collapsible-header">Graph</div>
-      <div class="collapsible-body"><p>A graph application using HTML 5 canvas and javascript</p></div>
+      <div class="collapsible-body"><p>A graph application using HTML 5 canvas and javascript</p>
+        <i>Snapshot 1</i><br>
+<img src="graph1.png">
+<i>Snapshot 2</i><br>
+<img  align="middle" src="graph2.png">
+      </div>
     </li>
     
    
@@ -206,10 +241,13 @@ margin: auto;
     <li>
       <div class="collapsible-header">
    Calculator FX </div>
-      <div class="collapsible-body"><p>A simple calculator built using java FX</p></div>
+      <div class="collapsible-body"><p>A simple calculator built using java FX</p>
+      <img src="calcFX.png"></div>
+
+
     </li>
     <li>
-      <div class="collapsible-header">  Web Scrapper/div>
+      <div class="collapsible-header">  Web Scrapper</div>
       <div class="collapsible-body"><p>A web scrapper to parse data from justdial website</p></div>
     </li>
     
@@ -221,11 +259,30 @@ margin: auto;
 
    <div id="web" class="card language">
     <h4>Web Development</h4>
-    <hr>
+    
+ <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">
+   Dimensions IITD Website</div>
+      <div class="collapsible-body"><p>Developed Website for Dimenstions 2016 (Civil Engg Fest of IIT Delhi ) using HTML ,CSS and javascript
+        <br>
 
-    <a href="http://dimensions-iitd.co.in/">Dimensions IITD Website </a>- Developed Website for Dimenstions 2016 (Civil Engg Fest of IIT Delhi ) using HTML ,CSS and javascript
+       <a href="http://dimensions-iitd.co.in/">Dimensions IITD Link  </a></p>
+
+
+      </div>
+
+
+    </li>
+    
+    
+   
+  </ul>
+
+
 </div>
 
+</div>
 </div>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
@@ -245,7 +302,16 @@ margin: auto;
         
      </script>
 
-     
+     <style type="text/css">
+.collapsible-header
+{
+    background-color: #3b5998;
+    color:#FFFFFF;
+}
+nav{
+    background-color: #3b5998;
+}
+     </style>
 
       </body>
         </html>
